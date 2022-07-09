@@ -1,0 +1,26 @@
+:root {
+  --fondos: #d8c58d;
+  --letras: #173042;
+  --botones: #ffe9c7;
+  --extra: #468071;
+}
+
+a {
+  color: var(--botones);
+}
+
+a:hover {
+  color: var(--extra);
+}
+
+.linea {
+  border-right: 1px solid var(--extra);
+}
+
+.copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--botones);
+  margin-bottom: 0;
+}

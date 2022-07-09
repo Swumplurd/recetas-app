@@ -1,12 +1,12 @@
+import { MainLayout } from "./layouts/MainLayout";
+
+import '@fortawesome/fontawesome-free/css/all.css'
+import '../index.css'
+
 export const RecetasApp = () => {
   return (
-    <div className="container">
-        <div className="row">
-            <div className="col">
-                <h1>RecetasApp</h1>
-            </div>
-            
-        </div>
-    </div>
+    <MainLayout>
+      <h1>Aqui van cosas</h1>
+    </MainLayout>
   )
 };

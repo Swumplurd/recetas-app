@@ -1,0 +1,28 @@
+:root {
+    --fondos: #d8c58d;
+    --letras: #173042;
+    --botones: #ffe9c7;
+    --extra: #468071;
+}
+
+body {
+    background-color: var(--fondos);
+}
+
+.nav-style {
+    background-color: var(--letras);
+    color: var(--botones)
+}
+
+.nav-style a {
+    color: var(--botones)
+}
+
+.nav-style a:hover {
+    color: var(--extra)
+}
+
+.foot-style {
+    background-color: var(--letras);
+    color: var(--botones)
+}
