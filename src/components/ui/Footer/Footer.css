@@ -14,7 +14,7 @@ a {
 }
 
 a:hover {
-  color: var(--danger);
+  color: var(--extra);
 }
 
 .linea {
