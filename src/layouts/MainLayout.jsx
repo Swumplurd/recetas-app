@@ -3,7 +3,7 @@ import { Footer, Navbar } from '../components/ui'
 
 export const MainLayout = ({children}) => {
   return (
-    <>
+    <div className='d-flex flex-column justify-content-between' style={{minHeight: '100vh'}}>
         <div className="container-fluid nav-style shadow">
             <div className="row">
                 <div className="col">
@@ -25,6 +25,6 @@ export const MainLayout = ({children}) => {
                 </div>
             </div>
         </div>
-    </>
+    </div>
   )
 }

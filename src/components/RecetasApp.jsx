@@ -1,22 +1,19 @@
-import { MainLayout } from "../layouts/MainLayout";
-import { CardLayout } from "../layouts/CardLayout";
+import { Routes, Route } from "react-router-dom";
 
-import { Carousel } from "./others/Carousel/Carousel";
+import { MainLayout } from "../layouts/MainLayout";
 
 import '@fortawesome/fontawesome-free/css/all.css'
 import '../index.css'
-import { CardItem } from "./others/CardItem/CardItem";
+import { HomePage } from "../pages/HomePage";
+import { LoginPage } from "../pages/LoginPage";
 
 export const RecetasApp = () => {
   return (
     <MainLayout>
-      <Carousel/>
-      <CardLayout>
-        <CardItem/>
-        <CardItem/>
-        <CardItem/>
-        <CardItem/>
-      </CardLayout>
+      <Routes>
+        <Route path="/" element={<HomePage />}/>
+        <Route path="/login" element={<LoginPage />}/>
+      </Routes>
     </MainLayout>
   )
 };
