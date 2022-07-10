@@ -1,8 +1,12 @@
 :root {
-  --fondos: #d8c58d;
-  --letras: #173042;
-  --botones: #ffe9c7;
-  --extra: #468071;
+  --primary: #277afa;
+  --secondary: #a4a4a4;
+  --success: #abda44; 
+  --danger: #fd0b0b;
+  --warning: #fdc435;
+  --info: #18c6eb;
+  --light: #dddddd;
+  --dark: #161616;
 }
 
 a {
@@ -10,7 +14,7 @@ a {
 }
 
 a:hover {
-  color: var(--extra);
+  color: var(--danger);
 }
 
 .linea {

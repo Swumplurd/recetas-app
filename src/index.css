@@ -1,38 +1,42 @@
 :root {
-    --fondos: #d8c58d;
-    --letras: #173042;
-    --botones: #ffe9c7;
-    --extra: #468071;
+    --primary: #277afa;
+    --secondary: #a4a4a4;
+    --success: #abda44; 
+    --danger: #a60505;
+    --warning: #fdc435;
+    --info: #18c6eb;
+    --light: #dddddd;
+    --dark: #161616;
 }
 
 body {
-    background-color: var(--fondos);
+    background-color: var(--light);
 }
 
 .nav-style {
-    background-color: var(--letras);
-    color: var(--botones)
+    background-color: var(--danger);
+    color: var(--light)
 }
 
 .nav-style a {
-    color: var(--botones)
+    color: var(--light)
 }
 
 .nav-style a:hover {
-    color: var(--extra)
+    color: var(--light)
 }
 
 .foot-style {
-    background-color: var(--letras);
+    background-color: var(--danger);
     color: var(--botones)
 }
 
 .dropdown-styles {
-    background-color: var(--letras);
+    background-color: var(--light);
 }
 
 .category-nav:focus {
-    color: var(--extra);
+    color: var(--danger);
 }
 
 .columnas-dropdown {
@@ -46,4 +50,21 @@ body {
     padding: 0;
     top: 2.5rem;
     z-index: 2;
+}
+
+.btn-recetas {
+    background-color: var(--fondos);
+    color: var(--letras)
+}
+.card-login-body {
+    background-color: var(--letras);
+    color: var(--botones);
+}
+.card-login-header {
+    background-color: var(--danger);
+    color: var(--botones);
+}
+.input-body {
+    background-color: var(--sodapop);
+    color: var(--letras);
 }
