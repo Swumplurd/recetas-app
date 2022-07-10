@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer, Navbar } from '../ui'
+import { Footer, Navbar } from '../components/ui'
 
 export const MainLayout = ({children}) => {
   return (

@@ -1,0 +1,11 @@
+:root {
+    --fondos: #d8c58d;
+    --letras: #173042;
+    --botones: #ffe9c7;
+    --extra: #468071;
+}
+
+.card-style {
+    background-color: var(--letras);
+    color: var(--fondos);
+}

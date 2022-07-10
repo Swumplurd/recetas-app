@@ -1,0 +1,19 @@
+:root {
+    --fondos: #d8c58d;
+    --letras: #173042;
+    --botones: #ffe9c7;
+    --extra: #468071;
+}
+
+.dropdown-item-style {
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-item-style:hover {
+    background-color: var(--fondos);
+    font-weight: 600;
+    color: var(--letras);
+    display: flex;
+    justify-content: center;
+}

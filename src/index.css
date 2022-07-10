@@ -26,3 +26,24 @@ body {
     background-color: var(--letras);
     color: var(--botones)
 }
+
+.dropdown-styles {
+    background-color: var(--letras);
+}
+
+.category-nav:focus {
+    color: var(--extra);
+}
+
+.columnas-dropdown {
+    font-size: 14px;
+    left: 0;
+    box-sizing: content-box;
+    margin: 0;
+    min-width: 22rem;
+    overflow-x: hidden;
+    width: 100%;
+    padding: 0;
+    top: 2.5rem;
+    z-index: 2;
+}
