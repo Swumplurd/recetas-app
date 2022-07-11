@@ -23,31 +23,33 @@ export const LoginPage = () => {
       <div className="row d-flex justify-content-center">
         <div className="col-5">
           <div className="card">
-            <div className="card-header text-center card-login-header">Login</div>
+            <div className="card-header text-center card-login-header">
+              Login
+            </div>
             <div className="card-body card-login-body">
               <form onSubmit={handleLogin}>
                 <div className="mb-3">
-                  <label htmlFor="exampleInputEmail1" className="form-label">
+                  <label htmlFor="nombre_usuario" className="form-label">
                     Nombre de Usuario
                   </label>
                   <input
                     type="text"
                     className="form-control input-body"
-                    id="exampleInputEmail1"
+                    id="nombre_usuario"
                     name="username"
                     onChange={handleLoginInputChange}
                   />
                 </div>
                 <div className="mb-3">
-                  <label htmlFor="exampleInputPassword1" className="form-label">
+                  <label htmlFor="password" className="form-label">
                     Contraseña
                   </label>
                   <input
                     type="password"
-                    className="form-control"
-                    id="exampleInputPassword1"
                     name="password"
                     onChange={handleLoginInputChange}
+                    className="form-control input-body" 
+                    id="password"
                   />
                 </div>
                 <div className="d-flex justify-content-center">

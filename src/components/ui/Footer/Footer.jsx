@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Footer.css'
 
 export const Footer = () => {
@@ -38,7 +39,7 @@ export const Footer = () => {
               <hr />
               <div className="input-group justify-content-justify mb-2">
                 <div className="mx-auto d-block">
-                  <a href="#">Registrate</a>
+                  <Link to="/registro">Registrate</Link>
                 </div>
               </div>
             </div>

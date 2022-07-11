@@ -1,9 +1,13 @@
 :root {
-    --fondos: #d8c58d;
-    --letras: #173042;
-    --botones: #ffe9c7;
-    --extra: #468071;
-}
+    --primary: #2c7676;
+    --secondary: #f8f6f3;
+    --success: #969696; 
+    --danger: #70b6b6;
+    --warning: #b8dbdb;
+    --info: #18c6eb;
+    --light: #fcfefe;
+    --dark: #161616;
+  }
 
 .dropdown-item-style {
     display: flex;
@@ -11,9 +15,9 @@
 }
 
 .dropdown-item-style:hover {
-    background-color: var(--fondos);
+    background-color: var(--primary);
     font-weight: 600;
-    color: var(--letras);
+    color: var(--light);
     display: flex;
     justify-content: center;
 }
