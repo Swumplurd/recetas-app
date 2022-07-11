@@ -1,24 +1,24 @@
 :root {
-  --primary: #277afa;
-  --secondary: #a4a4a4;
-  --success: #abda44; 
-  --danger: #fd0b0b;
-  --warning: #fdc435;
+  --primary: #2c7676;
+  --secondary: #f8f6f3;
+  --success: #969696; 
+  --danger: #70b6b6;
+  --warning: #b8dbdb;
   --info: #18c6eb;
-  --light: #dddddd;
+  --light: #fcfefe;
   --dark: #161616;
 }
 
 a {
-  color: var(--botones);
+  color: var(--light);
 }
 
 a:hover {
-  color: var(--extra);
+  color: var(--primary);
 }
 
 .linea {
-  border-right: 1px solid var(--extra);
+  border-right: 1px solid var(--primary);
 }
 
 .copyright {
