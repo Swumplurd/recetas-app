@@ -1,6 +1,23 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { useForm } from "../hooks/useForm";
+
+import { startLogin } from "../store/slices/auth/thunks";
 
 export const LoginPage = () => {
+  const dispatch = useDispatch();
+
+  const [formLoginValues, handleLoginInputChange] = useForm({
+    username: "",
+    password: "",
+  });
+  const { username, password } = formLoginValues;
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    dispatch(startLogin(username, password));
+  };
+
   return (
     <div className="container">
       <div className="row d-flex justify-content-center">
@@ -8,16 +25,17 @@ export const LoginPage = () => {
           <div className="card">
             <div className="card-header text-center card-login-header">Login</div>
             <div className="card-body card-login-body">
-              <form>
+              <form onSubmit={handleLogin}>
                 <div className="mb-3">
                   <label htmlFor="exampleInputEmail1" className="form-label">
                     Nombre de Usuario
                   </label>
                   <input
-                    type="email"
+                    type="text"
                     className="form-control input-body"
                     id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
+                    name="username"
+                    onChange={handleLoginInputChange}
                   />
                 </div>
                 <div className="mb-3">
@@ -28,6 +46,8 @@ export const LoginPage = () => {
                     type="password"
                     className="form-control"
                     id="exampleInputPassword1"
+                    name="password"
+                    onChange={handleLoginInputChange}
                   />
                 </div>
                 <div className="d-flex justify-content-center">
